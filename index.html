@@ -72,7 +72,7 @@
                   </button>
                   <!-- Форма заказа -->
                   <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
-                  <form action="">
+                  <form action="launch.php">
                      <label class="form-modal-group">
                         <span class="form-modal-label">Имя</span>
                         <input class="form-modal-input" type="text" name="user-name" autocomplete="off">
@@ -83,7 +83,7 @@
                      </label>
                      <label class="form-modal-group">
                         <span class="form-modal-label">Телефон</span>
-                        <input class="form-modal-input" type="phone" name="user-phone" autocomplete="off">
+                        <input class="form-modal-input" type="tel" name="user-phone" autocomplete="off">
                         <svg class="form-modal-icon" width="18px" height="18px">
                            <use href="./images/sprite.svg#icon-phone">
                            </use>
@@ -91,15 +91,15 @@
                      </label>
                      <label class="form-modal-group">
                         <span class="form-modal-label">Почта</span>
-                        <input class="form-modal-input" type="mail" name="user-mail" autocomplete="off">
+                        <input class="form-modal-input" type="email" name="user-mail" autocomplete="off">
                         <svg class="form-modal-icon" width="18px" height="18px">
                            <use href="./images/sprite.svg#icon-email">
                            </use>
                         </svg>
                      </label>
-                     <label class="form-modal-group">
+                     <label class="form-modal-group comments">
                         <span class="form-modal-label">Комментарий</span>
-                        <textarea class="form-modal-user-comments" name="" rows="7" autocomplete="off"
+                        <textarea class="form-modal-user-comments" name="user-comments" rows="7" autocomplete="off"
                            placeholder="Введите текст"></textarea>
                      </label>
                      <!-- Условия договора (чекбокс) -->
@@ -486,15 +486,15 @@
          </div>
          <div class="footer-form">
             <span class="footer-social">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>
-            <label class="footer-form-box">
-               <input class="footer-form-mail" type="mail" name="footer-user-mail" placeholder="E-mail">
+            <form action="launch.php" class="footer-form-box">
+               <input class="footer-form-mail" type="email" name="footer-user-mail" placeholder="E-mail">
                <button class="footer-form-btn" type="submit">Подписаться
                   <svg class="footer-form-btn-icon" width="24px" height="24px">
                      <use href="./images/sprite.svg#icon-plane">
                      </use>
                   </svg>
                </button>
-            </label>
+            </form>
          </div>
       </div>
    </footer>

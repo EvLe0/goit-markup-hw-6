@@ -273,18 +273,19 @@
          </div>
          <div class="footer-form">
             <span class="footer-social">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>
-            <div class="footer-form-box">
-               <input class="footer-form-mail" type="mail" placeholder="E-mail">
-               <button class="footer-form-btn">Подписаться
+            <form action="launch.php" class="footer-form-box">
+               <input class="footer-form-mail" type="email" name="footer-user-mail" placeholder="E-mail">
+               <button class="footer-form-btn" type="submit">Подписаться
                   <svg class="footer-form-btn-icon" width="24px" height="24px">
                      <use href="./images/sprite.svg#icon-plane">
                      </use>
                   </svg>
                </button>
-            </div>
+            </form>
          </div>
       </div>
    </footer>
+
 </body>
 
 </html>

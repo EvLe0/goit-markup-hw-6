@@ -342,6 +342,10 @@ body {
    margin-bottom: 10px;
 }
 
+.comments {
+   margin-bottom: 20px;
+}
+
 .form-modal-label {
    display: block;
    font-weight: 400;
@@ -363,7 +367,6 @@ body {
 
    padding: 0 40px;
    margin-top: 4px;
-   margin-bottom: 10px;
 
    cursor: pointer;
    border: 1px solid rgba(33, 33, 33, 0.2);
@@ -379,7 +382,7 @@ body {
 }
 
 .form-modal-input:focus {
-   border: 2px solid var(--color-font-hover)
+   border: 1px solid var(--color-font-hover)
 }
 
 .form-modal-icon {
@@ -421,6 +424,7 @@ body {
 }
 
 .form-modal-user-comments {
+   display: block;
    width: 100%;
    resize: none;
    outline: none;
@@ -448,20 +452,18 @@ body {
    color: rgba(117, 117, 117, 0.5);
 }
 
-.form-modal-user-comments:hover {
+.form-modal-user-comments:hover,
+.form-modal-user-comments:focus {
    border-color: var(--color-font-hover);
 }
 
-.form-modal-user-comments:focus {
-   border: 2px solid var(--color-font-hover);
-}
 
 /* Checkbox style */
 
 .form-agreement {
    display: flex;
    align-items: center;
-   padding-left: 11px;
+   justify-content: center;
 }
 
 .custom-checkbox {
@@ -778,6 +780,10 @@ img {
 .social-link:hover,
 .social-link:focus {
    background-color: var(--color-font-hover);
+}
+
+.footer-logo {
+   flex-grow: 1;
 }
 
 /* Footer mail form */
